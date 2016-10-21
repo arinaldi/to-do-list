@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>To-Do List</title>
+    <link rel='shortcut icon' href='favicon.ico?' type='image/x-icon' />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+    <link rel="stylesheet" type="text/css" href="css/simplegrid.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div class="grid grid-pad">
+	    <div class="col-1-10">
+	       <div class="content">
+	       </div>
+	    </div>
+
+	    <div class="col-10-12">
+	       <div class="content">
+	           <header>
+    				<h1>To-Do List</h1>
+    				<a href="http://rest.learncode.academy/api/tony/testing" target="_blank">Check the API</a>
+    				<div id="input-box">
+    					<input type="text" placeholder="Enter a task" id="task">
+    					<button class="button add-btn" id="add">Add</button>
+    				</div>
+    			</header>
+	
+				<main>
+    				<ul class="todo" id="todo"></ul>
+    			</main>
+	       </div>
+	    </div>
+	    <div class="col-1-12">
+	       <div class="content">
+	       </div>
+	    </div>
+	</div>
+
+    <template id="task-template">
+    	<li data-id="{{id}}">
+        	<span class="no-edit task">{{task}}</span>
+            <input class="edit task" />
+
+        	<button class="button del-btn no-edit">Delete</button>
+            <button class="button edit-btn no-edit">Edit</button>
+            <button class="button save-btn edit">Save</button>
+            <button class="button cancel-btn edit">Cancel</button>
+        </li>
+    </template>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

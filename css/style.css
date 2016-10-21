@@ -1,0 +1,106 @@
+#input-box {
+  background: #e6e6e6;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+body {
+  font: 13px 'Roboto', 'Arial', sans-serif;
+  font-weight: 500;
+  color: #555;
+}
+
+h1 {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+  float: right;
+  margin: 13px 0px;
+}
+
+a:hover {
+  border-bottom: 1px dotted darkslategray;
+}
+
+a:visited {
+  color: darkgray;
+}
+
+input {
+  width: 65%;
+  //height: 20px;
+  text-indent: 5px;
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+  background: #f2f2f2;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+ul li .edit {
+  display: none;
+}
+
+ul li.edit .edit {
+  display: initial;
+}
+
+ul li.edit .no-edit {
+  display: none;
+}
+
+.button {
+  cursor: pointer;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  float: right;
+  border: none;
+  padding: 5px 10px;
+  width: 60px;
+  border-radius: 4px;
+  transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+}
+
+.add-btn {
+  background-color: darkgray;
+}
+
+.edit-btn, .cancel-btn, .save-btn, .del-btn {
+  background-color: lightgray;
+  margin: -5px 0px 0px 5px;
+}
+
+.add-btn:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #ffff99;
+}
+
+.save-btn:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.del-btn:hover {
+  background-color: #ff4d4d;
+  color: white;
